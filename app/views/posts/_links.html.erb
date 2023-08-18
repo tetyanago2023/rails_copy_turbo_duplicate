@@ -1,0 +1,5 @@
+<%= link_to "Show this post", post %> |
+<%= link_to "Duplicate", duplicate_post_path(post), data: { turbo_method: :post} %> |
+<%= link_to "Copy", new_from_copy_post_path(post) %> |
+<%= link_to "Edit", edit_post_path(post) %> |
+<%= link_to "Delete", post, method: :delete, data: { turbo_method: :delete } %>
